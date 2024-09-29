@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { CabeceroComponent } from "./components/cabecero/cabecero.component";
 import { PiePaginaComponent } from './components/pie-pagina/pie-pagina.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CabeceroComponent,PiePaginaComponent],
+  imports: [RouterOutlet, CabeceroComponent,PiePaginaComponent,RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
